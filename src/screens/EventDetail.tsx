@@ -87,6 +87,11 @@ export function EventDetailScreen({
             />
           </View>
         </Hero>
+        {event.fields.Schedule && (
+          <Text style={[s.small, { marginBottom: 16 }]}>
+            {event.fields.Schedule}
+          </Text>
+        )}
         <View style={s.wrap}>
           <Badge text={event.fields.Category} />
           <Badge text={event.fields.Age} />

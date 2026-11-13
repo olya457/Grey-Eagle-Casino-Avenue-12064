@@ -56,8 +56,10 @@ Explore includes eight English-language resources: six articles and two videos f
 
 ## Adaptive layout and motion
 
-Layouts observe live window dimensions, safe-area insets and font scaling. Wide windows use two-column cards, a split onboarding layout, labelled navigation and side-by-side assistant conversation and suggestions. Narrow windows return to one column; large text, short landscape windows and safe areas are handled without device-name checks or resetting navigation and input state. This supports the iPhone Duo outer and unfolded displays as well as resized multitasking windows.
+Layouts observe live window dimensions, safe-area insets and font scaling. Wide windows use two-column cards, a split onboarding layout, labelled navigation and side-by-side assistant conversation and suggestions. When the window is wider than it is tall, navigation becomes a scrollable vertical rail on the left and reserves its own content space. Portrait windows keep the bottom tab bar. Narrow windows return to one column; large text, short landscape windows and safe areas are handled without device-name checks or resetting navigation and input state. This supports the iPhone Duo outer and unfolded displays as well as resized multitasking windows.
 
 Screen entrances, staggered cards, onboarding changes, chat messages and press feedback use React Native Animated with native-driver transforms. System Reduce Motion disables these transitions and changes the splash to a static progress indicator while preserving its four-second duration.
 
 Images follow `grey-eagle-*.png` naming. Unused background/duplicate-room images, five byte-identical poster copies, redundant menu source copies and the unused React Native welcome package have been removed. The native launch storyboard now uses a plain black background instead of template branding.
+
+The Events date control opens a month calendar with event markers and a clear-date action. The supplied 36 events repeat across November 2026–April 2027, while original entries outside that window remain available. Generated occurrences have unique IDs, preserve show times and are labelled as repeated listings requiring date confirmation.

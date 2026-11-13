@@ -1,9 +1,9 @@
 import { MotionPressable as Pressable } from '../components/Motion';
-import { useLayout } from '../hooks/useLayout';
+import { SceneWidthInsetContext, useLayout } from '../hooks/useLayout';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 import { ResourcesScreen, ResourceDetailScreen } from '../screens/Resources';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { DarkTheme, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
@@ -36,17 +36,34 @@ function TabBar({ state, navigation }: BottomTabBarProps) {
   const layout = useLayout();
   return (
     <View
+      testID={layout.wide ? 'navigation-rail' : 'navigation-bottom'}
       pointerEvents="box-none"
       style={[
-        n.barWrap,
-        {
-          bottom: insets.bottom + 8,
-          left: Math.max(12, insets.left),
-          right: Math.max(12, insets.right),
-        },
+        layout.wide ? n.railWrap : n.barWrap,
+        layout.wide
+          ? {
+              width: 92 + insets.left,
+              paddingLeft: insets.left + 8,
+              paddingTop: insets.top + 8,
+              paddingBottom: insets.bottom + 8,
+            }
+          : {
+              bottom: insets.bottom + 8,
+              left: Math.max(12, insets.left),
+              right: Math.max(12, insets.right),
+            },
       ]}
     >
-      <View style={[n.bar, { maxWidth: layout.expanded ? 640 : 460 }]}>
+      <ScrollView
+        horizontal={!layout.wide}
+        scrollEnabled={layout.wide}
+        showsVerticalScrollIndicator={false}
+        style={layout.wide ? n.railScroll : n.bottomScroll}
+        contentContainerStyle={[
+          n.bar,
+          layout.wide ? n.rail : { maxWidth: layout.expanded ? 640 : 460 },
+        ]}
+      >
         {state.routes.map((route, index) => {
           const focused = state.index === index;
           return (
@@ -68,7 +85,7 @@ function TabBar({ state, navigation }: BottomTabBarProps) {
               onLongPress={() =>
                 navigation.emit({ type: 'tabLongPress', target: route.key })
               }
-              style={n.tab}
+              style={[n.tab, layout.wide && n.railTab]}
             >
               <LinearGradient
                 colors={focused ? gradient : ['#12151e00', '#12151e00']}
@@ -80,7 +97,7 @@ function TabBar({ state, navigation }: BottomTabBarProps) {
                   size={22}
                 />
               </LinearGradient>
-              {layout.expanded && (
+              {layout.expanded && !layout.wide && (
                 <Text
                   style={[
                     s.small,
@@ -93,27 +110,32 @@ function TabBar({ state, navigation }: BottomTabBarProps) {
             </Pressable>
           );
         })}
-      </View>
+      </ScrollView>
     </View>
   );
 }
 function MainTabs() {
   const reduced = useReducedMotion();
+  const layout = useLayout();
+  const insets = useSafeAreaInsets();
   return (
-    <Tabs.Navigator
-      tabBar={props => <TabBar {...props} />}
-      screenOptions={{
-        headerShown: false,
-        animation: reduced ? 'none' : 'fade',
-        sceneStyle: { backgroundColor: '#000' },
-      }}
-    >
-      <Tabs.Screen name="Events" component={EventsScreen} />
-      <Tabs.Screen name="Dining" component={DiningScreen} />
-      <Tabs.Screen name="Hotel" component={HotelScreen} />
-      <Tabs.Screen name="Tours" component={ToursScreen} />
-      <Tabs.Screen name="Explore" component={ExploreScreen} />
-    </Tabs.Navigator>
+    <SceneWidthInsetContext.Provider value={layout.wide ? 92 + insets.left : 0}>
+      <Tabs.Navigator
+        tabBar={props => <TabBar {...props} />}
+        screenOptions={{
+          tabBarPosition: layout.wide ? 'left' : 'bottom',
+          headerShown: false,
+          animation: reduced ? 'none' : 'fade',
+          sceneStyle: { backgroundColor: '#000' },
+        }}
+      >
+        <Tabs.Screen name="Events" component={EventsScreen} />
+        <Tabs.Screen name="Dining" component={DiningScreen} />
+        <Tabs.Screen name="Hotel" component={HotelScreen} />
+        <Tabs.Screen name="Tours" component={ToursScreen} />
+        <Tabs.Screen name="Explore" component={ExploreScreen} />
+      </Tabs.Navigator>
+    </SceneWidthInsetContext.Provider>
   );
 }
 export function AppNavigator() {
@@ -150,6 +172,11 @@ export function AppNavigator() {
   );
 }
 const n = StyleSheet.create({
+  railWrap: { flexShrink: 0, justifyContent: 'center', paddingRight: 8 },
+  railScroll: { flexGrow: 0, flexShrink: 1 },
+  bottomScroll: { width: '100%', maxWidth: 640, flexGrow: 0 },
+  rail: { width: '100%', flexDirection: 'column', gap: 8, borderRadius: 32 },
+  railTab: { flex: 0, minHeight: 48 },
   barWrap: { position: 'absolute', left: 20, right: 20, alignItems: 'center' },
   bar: {
     width: '100%',

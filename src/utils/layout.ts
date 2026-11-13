@@ -17,6 +17,7 @@ export function getLayout(
   return {
     width,
     height,
+    wide: width > height,
     fontScale,
     compact,
     expanded,

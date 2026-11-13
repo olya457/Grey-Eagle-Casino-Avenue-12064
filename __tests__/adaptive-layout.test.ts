@@ -35,3 +35,13 @@ test('large text and short landscape layouts keep usable space', () => {
   ).toBe(1);
   expect(getLayout(667, 375, 1, 44, 44).short).toBe(true);
 });
+
+test.each([
+  [890, 626, true],
+  [667, 320, true],
+  [320, 667, false],
+  [626, 890, false],
+  [600, 600, false],
+])('navigation orientation for %i by %i', (width, height, wide) => {
+  expect(getLayout(width as number, height as number).wide).toBe(wide);
+});

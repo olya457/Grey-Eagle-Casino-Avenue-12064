@@ -1,7 +1,7 @@
 import { assets, events, menu, rooms, tours, venues } from '../src/data';
 import { filterEvents } from '../src/utils/events';
 test('every supplied event and room has a bundled local image', () => {
-  expect(events).toHaveLength(36);
+  expect(events.filter(item => !item.fields.Schedule)).toHaveLength(36);
   expect(rooms).toHaveLength(5);
   for (const item of [...events, ...rooms, ...venues]) {
     expect(assets[item.image!]).toBeDefined();
@@ -27,5 +27,5 @@ test('event search combines title, category and exact date', () => {
   ).toEqual(['events-1']);
   expect(filterEvents(events, 'dean ray', 'Comedy', null)).toEqual([]);
   expect(filterEvents(events, 'not-a-real-performer', 'All', null)).toEqual([]);
-  expect(filterEvents(events, '', 'All', null)).toHaveLength(36);
+  expect(filterEvents(events, '', 'All', null)).toHaveLength(events.length);
 });

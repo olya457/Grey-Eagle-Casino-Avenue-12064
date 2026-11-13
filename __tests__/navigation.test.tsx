@@ -1,8 +1,10 @@
 import React from 'react';
+import * as ReactNative from 'react-native';
 import { act, create, ReactTestRenderer } from 'react-test-renderer';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import { AppNavigator } from '../src/navigation/AppNavigator';
 
+let mockScreenOptions: { tabBarPosition: string };
 let mockRenderTabBar: (props: BottomTabBarProps) => React.ReactNode;
 jest.mock('@react-navigation/native', () => ({
   DarkTheme: { colors: {} },
@@ -20,7 +22,14 @@ jest.mock('@react-navigation/native-stack', () => ({
 }));
 jest.mock('@react-navigation/bottom-tabs', () => ({
   createBottomTabNavigator: () => ({
-    Navigator: ({ tabBar }: { tabBar: typeof mockRenderTabBar }) => {
+    Navigator: ({
+      tabBar,
+      screenOptions,
+    }: {
+      tabBar: typeof mockRenderTabBar;
+      screenOptions: typeof mockScreenOptions;
+    }) => {
+      mockScreenOptions = screenOptions;
       mockRenderTabBar = tabBar;
       return null;
     },
@@ -67,6 +76,7 @@ jest.mock('../src/screens/Resources', () => ({
 }));
 
 test('tab bar render callback safely creates a component and handles tab selection', async () => {
+  const initial = ReactNative.Dimensions.get('window');
   let navigator: ReactTestRenderer;
   let bar: ReactTestRenderer;
   await act(async () => {
@@ -96,6 +106,44 @@ test('tab bar render callback safely creates a component and handles tab selecti
       .props.onPress();
   });
   expect(navigate).toHaveBeenCalledWith('Dining');
+  for (const [width, height, position] of [
+    [890, 626, 'left'],
+    [667, 320, 'left'],
+    [320, 667, 'bottom'],
+    [626, 890, 'bottom'],
+    [402, 874, 'bottom'],
+  ] as const) {
+    await act(async () => {
+      ReactNative.Dimensions.set({
+        window: { width, height, scale: 3, fontScale: 1 },
+        screen: { width, height, scale: 3, fontScale: 1 },
+      });
+      navigator.update(<AppNavigator />);
+      bar.update(
+        <>
+          {mockRenderTabBar({ ...props, state: { ...props.state, index: 3 } })}
+        </>,
+      );
+    });
+    expect(mockScreenOptions.tabBarPosition).toBe(position);
+    expect(
+      bar!.root.findAllByProps({
+        testID: position === 'left' ? 'navigation-rail' : 'navigation-bottom',
+      }).length,
+    ).toBeGreaterThan(0);
+    expect(
+      bar!.root.findAllByProps({ accessibilityLabel: 'Tours' })[0].props
+        .accessibilityState.selected,
+    ).toBe(true);
+    for (const name of names) {
+      expect(
+        bar!.root.findAllByProps({ accessibilityLabel: name }).length,
+      ).toBeGreaterThan(0);
+    }
+  }
+  await act(async () => {
+    ReactNative.Dimensions.set({ window: initial, screen: initial });
+  });
   await act(async () => {
     navigator.unmount();
     bar.unmount();

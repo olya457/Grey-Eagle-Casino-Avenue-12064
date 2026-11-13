@@ -1,3 +1,5 @@
+import { EventCalendar } from '../components/EventCalendar';
+import { dateKey } from '../utils/calendar';
 import { AdaptiveGrid } from '../components/AdaptiveGrid';
 import { MotionPressable as Pressable } from '../components/Motion';
 import React, { useMemo, useState } from 'react';
@@ -19,13 +21,13 @@ import { Icon } from '../components/Icon';
 import { colors, s } from '../theme';
 import { RootParams } from '../navigation/types';
 import { eventCategory, filterEvents } from '../utils/events';
-const dateKey = (date: Date) =>
-  `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(
-    2,
-    '0',
-  )}-${String(date.getDate()).padStart(2, '0')}`;
 export function EventsScreen() {
   const navigation = useNavigation<NativeStackNavigationProp<RootParams>>();
+  const [calendarOpen, setCalendarOpen] = useState(false);
+  const eventDates = useMemo(
+    () => new Set(events.flatMap(item => (item.date ? [item.date] : []))),
+    [],
+  );
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All');
   const [date, setDate] = useState<string | null>(null);
@@ -60,6 +62,18 @@ export function EventsScreen() {
   };
   return (
     <Screen>
+      <EventCalendar
+        visible={calendarOpen}
+        month={month}
+        selected={date}
+        eventDates={eventDates}
+        onMonthChange={setMonth}
+        onClose={() => setCalendarOpen(false)}
+        onSelect={value => {
+          setDate(value);
+          setCalendarOpen(false);
+        }}
+      />
       <View style={s.between}>
         <View style={s.fill}>
           <Text style={s.label}>GREY EAGLE · CASINO AVENUE</Text>
@@ -116,7 +130,12 @@ export function EventsScreen() {
           >
             <Icon name="next" size={16} />
           </Pressable>
-          <Pressable onPress={() => setDate(null)} accessibilityRole="button">
+          <Pressable
+            onPress={() => setCalendarOpen(true)}
+            accessibilityRole="button"
+            accessibilityLabel="Open date calendar"
+            style={{ minHeight: 44, justifyContent: 'center' }}
+          >
             <Text style={{ color: colors.accent, fontSize: 12 }}>
               All dates
             </Text>
@@ -185,7 +204,10 @@ export function EventsScreen() {
               >
                 <Image
                   source={assets[item.image!]}
-                  style={StyleSheet.absoluteFill}
+                  style={[
+                    StyleSheet.absoluteFill,
+                    { width: '100%', height: '100%' },
+                  ]}
                   resizeMode="cover"
                 />
                 <LinearGradient

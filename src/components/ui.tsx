@@ -44,7 +44,8 @@ export function Screen({
             marginRight: insets.right,
             width: layout.width - insets.left - insets.right,
             maxWidth: bottom ? layout.maxWidth : layout.readerWidth,
-            paddingBottom: bottom ? insets.bottom + 110 : insets.bottom + 24,
+            paddingBottom:
+              bottom && !layout.wide ? insets.bottom + 110 : insets.bottom + 24,
           },
         ]}
       >
@@ -213,7 +214,7 @@ export function Hero({
       {source && (
         <Image
           source={source}
-          style={StyleSheet.absoluteFill}
+          style={[StyleSheet.absoluteFill, { width: '100%', height: '100%' }]}
           resizeMode="cover"
         />
       )}

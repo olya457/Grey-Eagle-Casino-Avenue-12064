@@ -1,3 +1,4 @@
+import { expandEventSchedule } from '../utils/eventSchedule';
 import eventData from './events.json';
 import roomData from './rooms.json';
 import tourData from './tours.json';
@@ -24,7 +25,7 @@ export type MenuItem = {
   description: string;
   availability: string;
 };
-export const events = eventData as CatalogItem[];
+export const events = expandEventSchedule(eventData as CatalogItem[]);
 export const rooms = roomData as CatalogItem[];
 export const tours = tourData as CatalogItem[];
 export const venues = venueData as unknown as CatalogItem[];
