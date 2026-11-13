@@ -1,0 +1,108 @@
+[
+  {
+    "id": "venues-1",
+    "title": "Little Chief Restaurant",
+    "image": "grey-eagle-little-chief-restaurant.png",
+    "fields": {
+      "Category": "Indigenous-Inspired · Canadian Cuisine"
+    },
+    "description": "Located inside the Grey Eagle Hotel, Little Chief offers a distinctive dining experience inspired by Indigenous culinary traditions and locally sourced ingredients. The menu combines regional flavours with contemporary Canadian favourites, including Alberta beef, bison, bannock, burgers, pasta and seasonal specialties. Its welcoming atmosphere makes it an excellent choice for family breakfasts, relaxed lunches and memorable dinners before an evening show.",
+    "sections": {
+      "Restaurant information": [
+        "Hours: Daily, 7:00 AM – 9:00 PM",
+        "Breakfast: Mon–Fri until 10:30 AM; Sat–Sun until 11:00 AM",
+        "Happy hour: Daily, 2:00 PM – 5:00 PM",
+        "Reservations: Available; recommended on concert nights",
+        "Location: Grey Eagle Hotel, main level",
+        "Dress code: Smart casual",
+        "Age: All ages welcome",
+        "Additional information: For concert-night reservations, contact the restaurant directly at (587) 390-1400, as online reservations may be unavailable during these periods."
+      ]
+    }
+  },
+  {
+    "id": "venues-2",
+    "title": "Buffet Restaurant",
+    "image": "grey-eagle-buffet-restaurant.png",
+    "fields": {
+      "Category": "Buffet Dining · International Cuisine"
+    },
+    "description": "Discover an extensive selection of freshly prepared dishes at the Grey Eagle Buffet Restaurant. Featuring rotating daily themes, the buffet offers everything from traditional comfort foods and premium carved meats to seafood specialties and Pan-Asian favourites. With changing menus and generous selections, guests can explore different flavours throughout the week in a casual and lively dining environment.",
+    "sections": {
+      "Restaurant information": [
+        "Breakfast: Mon–Sat, 8:30 AM – 10:30 AM",
+        "Lunch: Mon–Sat, 11:00 AM – 2:30 PM; Sun, 10:00 AM – 2:30 PM",
+        "Dinner: Daily, 5:00 PM – 10:00 PM",
+        "Reservations: Available for selected dining periods; walk-ins welcome",
+        "Location: Inside the casino, dining area",
+        "Dress code: Casual",
+        "Age: 18+ only",
+        "Additional information: The buffet features rotating dining themes, including Prime Rib, Seafood and Pan-Asian selections. Reservations are not accepted for Wednesday Pan-Asian Night, Thursday Seafood Night or certain promotional events. Menu selections may change without notice.",
+        "Renovation notice: The Buffet Restaurant is scheduled to remain open through December 31, 2026, before temporarily closing for renovations in January 2027."
+      ]
+    }
+  },
+  {
+    "id": "venues-3",
+    "title": "Blaze Bar & Grill",
+    "image": "grey-eagle-blaze-bar-grill.png",
+    "fields": {
+      "Category": "Casual Dining · Grill & International Cuisine"
+    },
+    "description": "Blaze Bar & Grill brings together classic comfort food and a diverse selection of international favourites in a relaxed casino dining atmosphere. Its extensive menu includes juicy burgers, steaks, wings, sandwiches, pasta, seafood and Pan-Asian specialties. Whether stopping by for a casual lunch, a satisfying dinner or a meal before a concert, Blaze offers familiar dishes and generous options for different tastes.",
+    "sections": {
+      "Restaurant information": [
+        "Status: Temporarily closed for renovations",
+        "Menu availability: Daily, 10:30 AM – 1:00 AM at alternative locations",
+        "Daytime service: Stage Bar, 10:30 AM – 5:00 PM",
+        "Evening service: Buffet Restaurant, 5:00 PM – 1:00 AM",
+        "Location: Casino dining area",
+        "Dining style: Casual",
+        "Age: 18+ in casino areas",
+        "Additional information: While Blaze Bar & Grill undergoes renovations, guests can continue enjoying its full menu at designated dining locations within the casino. The original restaurant is expected to reopen following its refurbishment. Service arrangements may change during ongoing renovations."
+      ]
+    }
+  },
+  {
+    "id": "venues-4",
+    "title": "Stage Bar",
+    "image": "grey-eagle-stage-bar.png",
+    "fields": {
+      "Category": "Sports Bar · Live Entertainment · Casual Dining"
+    },
+    "description": "Enjoy drinks, casual food and live entertainment in the lively atmosphere of Stage Bar. Located within Grey Eagle Resort & Casino, this welcoming venue hosts live music performances and offers a comfortable place to relax with friends. Guests can enjoy refreshing beverages, convenient Grab N' Go selections and casual dishes while experiencing the energy of the surrounding entertainment complex.",
+    "sections": {
+      "Bar information": [
+        "Hours: Daily; service hours may vary",
+        "Food service: Blaze menu, 10:30 AM – 5:00 PM during renovations",
+        "Grab N' Go: Limited selection available",
+        "Entertainment: Live music and scheduled performances",
+        "Location: Inside the casino, Stage Bar area",
+        "Smoking policy: Non-smoking",
+        "Age: 18+ only",
+        "Additional information: Stage Bar regularly features free live entertainment, including performances by local and visiting musicians. During the current renovations, the Blaze Bar & Grill menu replaces the regular daytime Stage Bar menu. Guests can still find selected sandwiches, salads, snacks and beverages through Grab N' Go."
+      ]
+    }
+  },
+  {
+    "id": "venues-5",
+    "title": "Eagle Bar",
+    "image": "grey-eagle-eagle-bar.png",
+    "fields": {
+      "Category": "Casino Bar · Cocktails & Beverages"
+    },
+    "description": "Take a break and enjoy a refreshing drink at Eagle Bar, located in the heart of Grey Eagle's gaming floor. Surrounded by the vibrant atmosphere of the casino, this bar offers a convenient place to unwind, socialize and enjoy expertly prepared beverages. From signature cocktails and classic mixed drinks to refreshing mocktails, Eagle Bar provides a relaxed drinking experience without leaving the excitement of the casino.",
+    "sections": {
+      "Bar information": [
+        "Hours: Subject to casino bar service schedule",
+        "Service: Beverage service",
+        "Specialties: Signature cocktails, mixed drinks and mocktails",
+        "Reservations: No reservation service advertised",
+        "Location: Centre of the casino gaming floor",
+        "Atmosphere: Casual and lively",
+        "Age: 18+ only",
+        "Additional information: Eagle Bar is primarily a beverage-focused destination rather than a full-service restaurant. It is ideal for visitors looking for a comfortable spot to enjoy a drink while remaining close to the gaming floor."
+      ]
+    }
+  }
+]

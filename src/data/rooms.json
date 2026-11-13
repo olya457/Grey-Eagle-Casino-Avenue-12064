@@ -1,0 +1,214 @@
+[
+  {
+    "id": "rooms-1",
+    "title": "Standard King",
+    "image": "grey-eagle-standard-king.png",
+    "fields": {
+      "Category": "STANDARD",
+      "Size": "332 sq ft",
+      "Beds": "1 King",
+      "Sleeps": "2",
+      "View": "Tsuut'ina Landscape / Mountains"
+    },
+    "description": "Discover a comfortable retreat designed for relaxing after a busy day of entertainment or exploring Calgary. The Standard King combines a spacious king-sized bed with premium bedding, a practical work desk and a welcoming sitting area. Large windows offer views of the surrounding Tsuut'ina Nation landscape, with the Rocky Mountains providing a beautiful backdrop. Warm furnishings and convenient in-room amenities make this an excellent choice for couples and solo travellers.",
+    "sections": {
+      "Description": [
+        "Discover a comfortable retreat designed for relaxing after a busy day of entertainment or exploring Calgary. The Standard King combines a spacious king-sized bed with premium bedding, a practical work desk and a welcoming sitting area. Large windows offer views of the surrounding Tsuut'ina Nation landscape, with the Rocky Mountains providing a beautiful backdrop. Warm furnishings and convenient in-room amenities make this an excellent choice for couples and solo travellers."
+      ],
+      "Key amenities": [
+        "High-speed Wi-Fi",
+        "47\" Flat-Screen TV",
+        "In-room coffee",
+        "Mini refrigerator",
+        "In-room safe",
+        "Air conditioning"
+      ],
+      "Room features": [
+        "King-sized bed with premium linens",
+        "Private bathroom with shower",
+        "Comfortable sitting area and work desk",
+        "Iron, ironing board and hairdryer",
+        "Telephone, radio and alarm clock",
+        "Connecting rooms available upon request"
+      ],
+      "General information": [
+        "Check-in: From 3:00 PM",
+        "Check-out: By 11:00 AM",
+        "Bed configuration: 1 King",
+        "Smoking: Non-smoking room",
+        "Pets: Select pet-friendly rooms only",
+        "Minimum age: 18+ to check in"
+      ]
+    }
+  },
+  {
+    "id": "rooms-2",
+    "title": "Premier King",
+    "image": "grey-eagle-premier-king.png",
+    "fields": {
+      "Category": "PREMIER",
+      "Size": "362 sq ft",
+      "Beds": "1 King",
+      "Sleeps": "2",
+      "View": "Mountain Views"
+    },
+    "description": "Enjoy an elevated level of comfort in the spacious Premier King room. Designed with a relaxing atmosphere in mind, this accommodation features an open layout, soothing earthy colours and a plush king-sized bed with premium linens. A comfortable sitting area provides space to unwind, while practical amenities support both leisure and business stays. Its welcoming design and generous floor space make the Premier King an appealing option for guests seeking additional comfort during their visit.",
+    "sections": {
+      "Description": [
+        "Enjoy an elevated level of comfort in the spacious Premier King room. Designed with a relaxing atmosphere in mind, this accommodation features an open layout, soothing earthy colours and a plush king-sized bed with premium linens. A comfortable sitting area provides space to unwind, while practical amenities support both leisure and business stays. Its welcoming design and generous floor space make the Premier King an appealing option for guests seeking additional comfort during their visit."
+      ],
+      "Key amenities": [
+        "High-speed Wi-Fi",
+        "47\" Flat-Screen TV",
+        "In-room coffee",
+        "Mini refrigerator",
+        "In-room safe",
+        "Air conditioning"
+      ],
+      "Room features": [
+        "King-sized bed with premium bedding",
+        "Spacious layout with warm, earthy décor",
+        "Comfortable sitting area",
+        "Private bathroom with shower",
+        "Cordless telephone and alarm clock",
+        "Iron, ironing board and hairdryer"
+      ],
+      "General information": [
+        "Check-in: From 3:00 PM",
+        "Check-out: By 11:00 AM",
+        "Bed configuration: 1 King",
+        "Smoking: Non-smoking room",
+        "Pets: Select pet-friendly rooms only",
+        "Minimum age: 18+ to check in"
+      ]
+    }
+  },
+  {
+    "id": "rooms-3",
+    "title": "Standard Two Queen",
+    "image": "grey-eagle-standard-two-queen.png",
+    "fields": {
+      "Category": "STANDARD",
+      "Size": "332 sq ft",
+      "Beds": "2 Queen",
+      "Sleeps": "4",
+      "View": "Mountain / City"
+    },
+    "description": "Perfect for families, friends and small groups, the Standard Two Queen room offers a practical and comfortable space for up to four guests. Two queen-sized beds with premium bedding provide a restful night's sleep, while the warm interior design creates a relaxed atmosphere. Guests can enjoy views of Calgary or the surrounding mountains, along with convenient amenities for an enjoyable stay. Whether visiting for a concert, a family getaway or a weekend in the city, this room offers a welcoming place to recharge.",
+    "sections": {
+      "Description": [
+        "Perfect for families, friends and small groups, the Standard Two Queen room offers a practical and comfortable space for up to four guests. Two queen-sized beds with premium bedding provide a restful night's sleep, while the warm interior design creates a relaxed atmosphere. Guests can enjoy views of Calgary or the surrounding mountains, along with convenient amenities for an enjoyable stay. Whether visiting for a concert, a family getaway or a weekend in the city, this room offers a welcoming place to recharge."
+      ],
+      "Key amenities": [
+        "High-speed Wi-Fi",
+        "47\" Flat-Screen TV",
+        "In-room coffee",
+        "Mini refrigerator",
+        "In-room safe",
+        "Air conditioning"
+      ],
+      "Room features": [
+        "Two queen-sized beds with premium linens",
+        "Private bathroom with shower",
+        "Comfortable sitting area",
+        "Views of the city or surrounding landscape",
+        "Iron, ironing board and hairdryer",
+        "Connecting rooms available upon request"
+      ],
+      "General information": [
+        "Check-in: From 3:00 PM",
+        "Check-out: By 11:00 AM",
+        "Bed configuration: 2 Queen",
+        "Smoking: Non-smoking room",
+        "Pets: Select pet-friendly rooms only",
+        "Minimum age: 18+ to check in"
+      ]
+    }
+  },
+  {
+    "id": "rooms-4",
+    "title": "King Suite",
+    "image": "grey-eagle-king-suite.png",
+    "fields": {
+      "Category": "LUXURY SUITE",
+      "Size": "570 sq ft",
+      "Beds": "1 King",
+      "Sleeps": "2",
+      "View": "Mountain / City"
+    },
+    "description": "Experience additional space and privacy in the elegant One-Bedroom King Suite. Designed for guests who appreciate separate areas for sleeping and relaxing, this accommodation features a private bedroom with a comfortable pillow-top king bed and a spacious living room with a cozy couch. Earthy interior tones create a calm atmosphere, while scenic views of Calgary or the surrounding landscape complement the experience. Ideal for longer stays, romantic getaways or guests seeking extra room to unwind, the King Suite combines comfort with practical luxury.",
+    "sections": {
+      "Description": [
+        "Experience additional space and privacy in the elegant One-Bedroom King Suite. Designed for guests who appreciate separate areas for sleeping and relaxing, this accommodation features a private bedroom with a comfortable pillow-top king bed and a spacious living room with a cozy couch. Earthy interior tones create a calm atmosphere, while scenic views of Calgary or the surrounding landscape complement the experience. Ideal for longer stays, romantic getaways or guests seeking extra room to unwind, the King Suite combines comfort with practical luxury."
+      ],
+      "Key amenities": [
+        "High-speed Wi-Fi",
+        "47\" Flat-Screen TV",
+        "In-room coffee",
+        "Mini refrigerator",
+        "In-room safe",
+        "Air conditioning"
+      ],
+      "Room features": [
+        "Separate bedroom with pillow-top king bed",
+        "Private living area with comfortable couch",
+        "Bathroom with bathtub and shower",
+        "Premium linens and bedding",
+        "Sitting area with scenic views",
+        "Iron, ironing board and hairdryer"
+      ],
+      "General information": [
+        "Check-in: From 3:00 PM",
+        "Check-out: By 11:00 AM",
+        "Bed configuration: 1 King",
+        "Smoking: Non-smoking suite",
+        "Pets: Select pet-friendly rooms only",
+        "Minimum age: 18+ to check in"
+      ]
+    }
+  },
+  {
+    "id": "rooms-5",
+    "title": "Presidential Suite",
+    "image": "grey-eagle-presidential-suite.png",
+    "fields": {
+      "Category": "PRESIDENTIAL · PREMIUM LUXURY",
+      "Size": "875 sq ft",
+      "Beds": "1 King",
+      "Sleeps": "2",
+      "View": "Mountain Views"
+    },
+    "description": "Discover the most spacious accommodation at Grey Eagle Resort & Casino. The Presidential Suite offers an exceptional retreat with 875 square feet of thoughtfully designed living space, combining elegant furnishings with premium comfort. A separate bedroom features a luxurious king-sized pillow-top bed, while the living and dining areas provide generous space for relaxing or entertaining. Guests can enjoy a wet bar, three televisions and two bathrooms, including a full bathroom with a deep soaking tub, separate shower and double vanity. This exclusive suite is ideal for special occasions and guests looking for an elevated resort experience.",
+    "sections": {
+      "Description": [
+        "Discover the most spacious accommodation at Grey Eagle Resort & Casino. The Presidential Suite offers an exceptional retreat with 875 square feet of thoughtfully designed living space, combining elegant furnishings with premium comfort. A separate bedroom features a luxurious king-sized pillow-top bed, while the living and dining areas provide generous space for relaxing or entertaining. Guests can enjoy a wet bar, three televisions and two bathrooms, including a full bathroom with a deep soaking tub, separate shower and double vanity. This exclusive suite is ideal for special occasions and guests looking for an elevated resort experience."
+      ],
+      "Key amenities": [
+        "High-speed Wi-Fi",
+        "Three televisions",
+        "In-room coffee",
+        "Mini refrigerator",
+        "In-room safe",
+        "Air conditioning"
+      ],
+      "Room features": [
+        "Separate bedroom with pillow-top king bed",
+        "Spacious living and dining areas",
+        "Wet bar for added convenience",
+        "Two private bathrooms",
+        "Deep soaking bathtub and separate shower",
+        "Double vanity in the main bathroom",
+        "Premium bedding and luxury furnishings",
+        "Evening turndown service"
+      ],
+      "General information": [
+        "Check-in: From 3:00 PM",
+        "Check-out: By 11:00 AM",
+        "Bed configuration: 1 King",
+        "Smoking: Non-smoking suite",
+        "Pets: Subject to pet-friendly room availability",
+        "Minimum age: 18+ to check in"
+      ]
+    }
+  }
+]

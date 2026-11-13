@@ -1,0 +1,321 @@
+[
+  {
+    "id": "tours-1",
+    "title": "Tsuut'ina Cultural Museum Discovery",
+    "image": null,
+    "fields": {
+      "Category": "Heritage",
+      "Duration": "Set by museum",
+      "Setting": "Indoor",
+      "Pace": "Relaxed"
+    },
+    "description": "Discover the living history of the Tsuut'ina Nation through a visit to its community cultural museum. Explore exhibits, historical photographs and artifacts that document generations of cultural knowledge. Guided visits offer an opportunity to learn about the Nation's history, traditions and continuing cultural identity, while the museum's collections provide valuable insight into the relationship between people, language and land.",
+    "sections": {
+      "Cultural background": [
+        "The Tsuut'ina are a Dene-speaking First Nation whose traditional territory includes lands southwest of present-day Calgary. Their cultural museum preserves historical materials and promotes an understanding of the Nation's distinct heritage. Established in 1983, the museum continues to support cultural education, historical preservation and the work of Indigenous artisans."
+      ],
+      "What to expect": [
+        "An introduction to the history and identity of the Tsuut'ina Nation.",
+        "An opportunity to explore historical photographs, cultural artifacts and museum displays.",
+        "Information about traditional practices and their connections to contemporary community life.",
+        "An opportunity to ask museum staff about the collections, with guided interpretation available when arranged."
+      ],
+      "Highlights": [
+        "Tsuut'ina history",
+        "Cultural artifacts",
+        "Historical photographs",
+        "Community heritage"
+      ],
+      "Visitor information": [
+        "Suitable for: All ages",
+        "Accessibility: Wheelchair accessible",
+        "Photography: Ask museum staff before photographing",
+        "Availability: Monday – Friday, 8:00 AM – 4:00 PM",
+        "Location: Tsuut'ina Nation Cultural Museum, Old Agency Road",
+        "Admission: Adult $12 CAD; youth $6 CAD; senior $8 CAD; children 4 and under free",
+        "Note: Guided tours should be arranged directly with the museum. Opening hours may change for community events."
+      ]
+    }
+  },
+  {
+    "id": "tours-2",
+    "title": "Chief Bullhead & Treaty 7 Heritage",
+    "image": null,
+    "fields": {
+      "Category": "History",
+      "Duration": "45–60 min suggested",
+      "Setting": "Indoor",
+      "Pace": "Relaxed"
+    },
+    "description": "Explore an important chapter in the history of the Tsuut'ina Nation through museum displays and historical interpretation focused on Chief Bullhead and Treaty 7. This educational visit introduces the circumstances surrounding the 1877 treaty signing and encourages a deeper understanding of the Nation's historical experiences, leadership and continuing relationship with its land.",
+    "sections": {
+      "Cultural background": [
+        "Chief Chiila, also known as Bullhead, was an influential leader of the Tsuut'ina people during a period of profound change in the nineteenth century. In 1877, the Tsuut'ina Nation became a signatory to Treaty 7. Understanding this history provides important context for the Nation's continuing identity, governance and treaty relationships."
+      ],
+      "What to expect": [
+        "Historical information about Chief Bullhead and his leadership.",
+        "An overview of the events surrounding Treaty 7.",
+        "A closer look at historical photographs and museum records.",
+        "An introduction to the importance of land and community continuity.",
+        "An opportunity to explore additional heritage displays at your own pace."
+      ],
+      "Highlights": [
+        "Chief Bullhead",
+        "Treaty 7 history",
+        "Historical leadership",
+        "Land & identity",
+        "Cultural continuity"
+      ],
+      "Visitor information": [
+        "Suitable for: All ages",
+        "Accessibility: Museum accessibility provisions",
+        "Photography: Follow museum guidelines",
+        "Availability: During museum opening hours",
+        "Location: Tsuut'ina Nation Cultural Museum",
+        "Admission: Regular museum admission",
+        "Note: This is a suggested educational theme for a museum visit, not a separately advertised guided tour. Access to Chief Bullhead's historic homestead or related areas must be confirmed with museum staff."
+      ]
+    }
+  },
+  {
+    "id": "tours-3",
+    "title": "Tsuut'ina Art Walk at Buffalo Run",
+    "image": null,
+    "fields": {
+      "Category": "Art & Culture",
+      "Duration": "30–60 min suggested",
+      "Setting": "Outdoor & Indoor",
+      "Pace": "Easy Walking"
+    },
+    "description": "Explore the creativity of Tsuut'ina artists through a self-guided walk around The Shops at Buffalo Run. This commercial district incorporates Indigenous murals, sculptures and artistic installations into everyday public spaces. Visitors can discover how visual art communicates ideas about identity, heritage, community and the relationship between the Nation and its land.",
+    "sections": {
+      "Cultural background": [
+        "Contemporary Tsuut'ina artists use painting, sculpture and design to express both historical connections and present-day perspectives. At Buffalo Run, works by Indigenous artists appear throughout the development, demonstrating how public art can help preserve cultural visibility while contributing to a modern community environment."
+      ],
+      "What to expect": [
+        "Explore exterior murals and public artwork throughout the shopping district.",
+        "Discover artistic contributions from Tsuut'ina creators.",
+        "Observe how cultural motifs are incorporated into contemporary architecture.",
+        "Visit accessible indoor displays in participating businesses.",
+        "Explore the district independently without a fixed itinerary.",
+        "Take time to appreciate the individual styles and perspectives of the artists."
+      ],
+      "Highlights": [
+        "Public murals",
+        "Tsuut'ina artists",
+        "Contemporary Indigenous art",
+        "Outdoor sculptures",
+        "Cultural storytelling",
+        "Self-guided discovery"
+      ],
+      "Visitor information": [
+        "Suitable for: All ages",
+        "Accessibility: Public pedestrian routes; accessibility varies by location",
+        "Photography: Respect business policies and individual privacy",
+        "Availability: Public artwork can generally be viewed during site access hours",
+        "Location: The Shops at Buffalo Run, Taza",
+        "Admission: Free for publicly accessible artwork",
+        "Note: This is a self-guided experience. Indoor displays may only be available during individual business opening hours."
+      ]
+    }
+  },
+  {
+    "id": "tours-4",
+    "title": "Indigenous Artisans & Traditional Craftsmanship",
+    "image": null,
+    "fields": {
+      "Category": "Arts & Traditions",
+      "Duration": "20–40 min suggested",
+      "Setting": "Indoor",
+      "Pace": "Relaxed"
+    },
+    "description": "Discover the creativity and craftsmanship of Indigenous makers at the Tsuut'ina Cultural Museum Gift Shop. Explore a selection of handmade clothing, jewellery, moccasins and decorative items created by Indigenous artisans. This visit offers an opportunity to appreciate the skill and cultural significance of handmade objects while supporting artists whose work connects traditional knowledge with contemporary creativity.",
+    "sections": {
+      "Cultural background": [
+        "Indigenous craftsmanship incorporates knowledge passed between generations while continually evolving through the work of individual artists. Beadwork, leatherwork, clothing and jewellery may reflect personal artistic expression, community connections and cultural traditions. The museum's gift shop supports Indigenous makers by offering a space for their work."
+      ],
+      "What to expect": [
+        "Explore handmade jewellery, clothing and decorative items.",
+        "Discover beadwork, moccasins and other traditional and contemporary crafts.",
+        "Learn about the importance of supporting authentic Indigenous artwork through information provided by the museum."
+      ],
+      "Highlights": [
+        "Handmade crafts",
+        "Indigenous beadwork",
+        "Traditional moccasins",
+        "Local artisans"
+      ],
+      "Visitor information": [
+        "Suitable for: All ages",
+        "Accessibility: Museum accessibility provisions",
+        "Photography: Ask permission before photographing merchandise",
+        "Availability: Monday – Friday, 8:00 AM – 4:00 PM",
+        "Location: Tsuut'ina Cultural Museum Gift Shop",
+        "Admission: No separate tour admission advertised; purchases are optional",
+        "Note: This is a self-guided retail and cultural visit, not a scheduled craft workshop. Specific products and artisan collections are subject to availability."
+      ]
+    }
+  },
+  {
+    "id": "tours-5",
+    "title": "Indigenous-Inspired Culinary Discovery",
+    "image": null,
+    "fields": {
+      "Category": "Culinary Heritage",
+      "Duration": "60–90 min suggested",
+      "Setting": "Indoor",
+      "Pace": "Relaxed"
+    },
+    "description": "Explore Indigenous-inspired flavours at Little Chief Restaurant, located inside Grey Eagle Resort Hotel. The restaurant brings together regional ingredients, contemporary Canadian cooking and culinary influences associated with Indigenous food traditions. From bannock and fry bread to Alberta bison, beef and locally inspired specialties, the dining experience introduces visitors to a distinctive side of the resort's hospitality.",
+    "sections": {
+      "Cultural background": [
+        "Food traditions are an important part of cultural identity, connecting communities to local ingredients, family knowledge and the natural environment. At Little Chief Restaurant, Indigenous-inspired dishes are presented alongside familiar Canadian favourites, creating a dining experience that reflects the restaurant's location on Tsuut'ina Nation land."
+      ],
+      "What to expect": [
+        "Explore a menu combining Indigenous-inspired and contemporary Canadian dishes.",
+        "Discover regional ingredients such as bison, local beef and Saskatoon berries.",
+        "Consider traditional bread preparations such as bannock and fry bread.",
+        "Enjoy a relaxed restaurant experience.",
+        "Learn more about individual dishes through available menu descriptions and restaurant staff."
+      ],
+      "Highlights": [
+        "Indigenous-inspired cuisine",
+        "Bannock & fry bread",
+        "Regional ingredients",
+        "Contemporary Canadian dining",
+        "Tsuut'ina hospitality"
+      ],
+      "Visitor information": [
+        "Suitable for: All ages",
+        "Accessibility: Contact the restaurant for specific requirements",
+        "Photography: Personal food photography subject to restaurant policies",
+        "Availability: During restaurant operating hours",
+        "Location: Little Chief Restaurant, Grey Eagle Hotel",
+        "Admission: No tour fee; food and beverages purchased separately",
+        "Note: This is a self-directed culinary experience, not a formally guided food tour. Specific menu items are subject to availability."
+      ]
+    }
+  },
+  {
+    "id": "tours-6",
+    "title": "Horses, Land & Cultural Connections",
+    "image": null,
+    "fields": {
+      "Category": "Outdoor Heritage",
+      "Duration": "Determined by selected program",
+      "Setting": "Outdoor",
+      "Pace": "Activity-dependent"
+    },
+    "description": "Discover the relationship between horses, land and community through experiences offered at Dodginghorse Ranch on the Tsuut'ina Nation. The ranch provides opportunities to connect with nature, learn about horsemanship and participate in selected educational or cultural activities. Programs vary according to the type of visit, allowing guests to explore different aspects of outdoor learning and community heritage.",
+    "sections": {
+      "Cultural background": [
+        "Horses have played a significant role in the histories of many Indigenous communities across the Plains, including the Tsuut'ina Nation. Contemporary horse programs can connect practical riding skills with cultural education, teamwork, responsibility and respect for the land. Dodginghorse Ranch supports these connections through equine activities and community-focused programming."
+      ],
+      "What to expect": [
+        "An introduction to the ranch environment and applicable safety guidelines.",
+        "Opportunities to learn about horses and responsible horsemanship.",
+        "Horseback riding when included in the booked program.",
+        "Cultural or educational activities depending on the selected experience.",
+        "Time outdoors in the landscape of the Tsuut'ina Nation."
+      ],
+      "Highlights": [
+        "Horseback riding",
+        "Land-based learning",
+        "Indigenous horsemanship",
+        "Outdoor experience",
+        "Cultural education",
+        "Nature connection"
+      ],
+      "Visitor information": [
+        "Suitable for: Depends on the selected activity",
+        "Accessibility: Confirm individual requirements with the ranch",
+        "Photography: Follow ranch instructions",
+        "Availability: By appointment only",
+        "Location: Dodginghorse Ranch, Tsuut'ina Nation",
+        "Admission: Pricing depends on the selected experience",
+        "Note: Horseback riding, drumming, cultural education and other ranch activities are separate offerings and are not guaranteed to be included together. All experiences require direct confirmation with the operator."
+      ]
+    }
+  },
+  {
+    "id": "tours-7",
+    "title": "Indigenous Voices & Stories of the Land",
+    "image": null,
+    "fields": {
+      "Category": "Land & History",
+      "Duration": "Self-paced",
+      "Setting": "Outdoor",
+      "Pace": "Easy Walking"
+    },
+    "description": "Discover the cultural importance of the land surrounding the confluence of the Bow and Elbow rivers through a self-guided audio experience at The Confluence Historic Site & Parkland in Calgary. Narrated by Indigenous storytellers and knowledge keepers, the audio tour explores connections between the land and the Blackfoot, Tsuut'ina and Métis peoples. Visitors can listen while walking through an area of longstanding cultural and historical significance.",
+    "sections": {
+      "Cultural background": [
+        "The meeting place of the Bow and Elbow rivers has been important to Indigenous communities for generations, long before the establishment of Fort Calgary in 1875. The area reflects overlapping histories of Indigenous presence, trade, settlement and changing relationships with the land. Indigenous-led interpretation helps visitors understand perspectives that extend beyond the city's colonial history."
+      ],
+      "What to expect": [
+        "Follow a self-guided audio experience through the historic landscape.",
+        "Listen to Indigenous perspectives on the meaning of the land.",
+        "Explore the area's connections to Blackfoot, Tsuut'ina and Métis histories.",
+        "Learn about the significance of the Bow and Elbow river confluence."
+      ],
+      "Highlights": [
+        "Indigenous storytelling",
+        "Historic river confluence",
+        "Treaty 7 perspectives",
+        "Self-guided audio",
+        "Land & memory"
+      ],
+      "Visitor information": [
+        "Suitable for: General audiences",
+        "Accessibility: Outdoor route conditions vary",
+        "Photography: Permitted in public areas, subject to site guidelines",
+        "Availability: Audio tour offered for self-guided visits",
+        "Location: The Confluence Historic Site & Parkland, Calgary",
+        "Admission: Free outdoor audio tour",
+        "Note: This independent attraction is located outside Grey Eagle Resort & Casino. Visitors need their own transportation and a compatible device to access the audio content."
+      ]
+    }
+  },
+  {
+    "id": "tours-8",
+    "title": "Tsuut'ina Nation Powwow Experience",
+    "image": null,
+    "fields": {
+      "Category": "Community Celebration",
+      "Duration": "Depends on event schedule",
+      "Setting": "Outdoor / Event Venue",
+      "Pace": "Flexible"
+    },
+    "description": "Experience a celebration of Indigenous culture and community at a Tsuut'ina Nation powwow when a public event is scheduled. Powwows bring together dancers, singers, drummers, families and visitors in an atmosphere of cultural expression and community pride. Attending provides an opportunity to appreciate the artistry of dance regalia, the power of drum groups and the importance of gathering across generations.",
+    "sections": {
+      "Cultural background": [
+        "Powwows are significant cultural and social gatherings for many Indigenous communities across North America. They create opportunities to celebrate identity, strengthen relationships and share dance and music traditions. While powwow practices vary between communities and individual events, respect for performers, organizers and cultural protocols is an essential part of the visitor experience."
+      ],
+      "What to expect": [
+        "Experience the atmosphere of a public Indigenous community celebration.",
+        "Watch dance performances and observe different styles of regalia.",
+        "Listen to drum groups and singers.",
+        "Learn about event protocols through announcements and guidance from organizers.",
+        "Explore permitted visitor areas and community activities.",
+        "Appreciate the importance of cultural continuity and intergenerational participation."
+      ],
+      "Highlights": [
+        "Powwow dancing",
+        "Drum groups",
+        "Traditional regalia",
+        "Community celebration",
+        "Indigenous music",
+        "Cultural continuity",
+        "Intergenerational heritage"
+      ],
+      "Visitor information": [
+        "Suitable for: All ages, subject to event rules",
+        "Accessibility: Depends on venue and event arrangements",
+        "Photography: Follow the emcee's instructions and ask permission when appropriate",
+        "Availability: Seasonal; dates must be officially announced",
+        "Location: Tsuut'ina Nation, event-specific venue",
+        "Admission: Determined by event organizers"
+      ]
+    }
+  }
+]

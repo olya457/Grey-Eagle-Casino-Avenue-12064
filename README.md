@@ -1,97 +1,63 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Grey Eagle Casino Avenue
 
-# Getting Started
+React Native 0.86 and TypeScript mobile guide, based on the supplied screen references and content. All photos, posters and logos are bundled in `src/assets`; no remote images are used.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
-
-## Step 1: Start Metro
-
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
-
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Run
 
 ```sh
-# Using npm
+npm install
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
+In another terminal:
 
 ```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
 npm run ios
-
-# OR using Yarn
-yarn ios
+npm run android
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+After changing native dependencies, install iOS pods with `pod install --project-directory=ios`. The Podfile aligns dependency deployment targets with React Native’s minimum iOS version, including resource bundles required by recent Xcode versions.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Structure
 
-## Step 3: Modify your app
+- `src/navigation`: typed root stack and five bottom tabs using React Navigation.
+- `src/screens`: onboarding, event calendar and details, dining and menus, hotel and rooms, cultural experiences, resort guide and assistant.
+- `src/components`: reusable gradient buttons, icons, cards, segments, filters and information tables.
+- `src/data`: the supplied catalogue and explicit local image mapping.
+- `src/storage`: AsyncStorage hydration and serialized writes for user data.
+- `src/theme`: shared colours and typography.
+- `src/utils`: event filtering and external link handling.
 
-Now that you have successfully run the app, let's make changes!
+## Behaviour
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+The splash uses the supplied background and logo with a four-second WebView progress animation. First launch continues to four onboarding pages. Completed onboarding is remembered; later launches open Events after the splash.
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+The catalogue contains 36 events, five venues, 169 menu items, five room types and eight cultural experiences. Search, category and date filters combine. Favorites start empty and are grouped by venue. Favorite dishes, user-entered promo codes, onboarding completion and assistant history remain on the device between launches.
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+The assistant answers the supplied questions offline and has question search and conversation clearing. It is not connected to an AI service. Maps, the restaurant phone action and Ticketmaster search open external applications; external actions require compatible apps or connectivity.
 
-## Congratulations! :tada:
+No discount codes or personal data are generated. Event promo sheets let visitors save, edit, remove and copy codes they already received from a venue or ticket provider. Automatic discount issuance, verification, in-app bookings and payments require authorized external services that were not supplied. The app does not claim a booking or purchase has been completed.
 
-You've successfully run and modified your React Native App. :partying_face:
+The supplied content is a bundled catalogue, not a live event or restaurant feed. Update the JSON data when schedules, menus, prices or renovation notices change. The runtime reads `menu.json`; keep record IDs stable when updating the catalogue.
 
-### Now what?
+## Checks
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+```sh
+npx tsc --noEmit
+npm test -- --runInBand
+npm run lint
+```
 
-# Troubleshooting
+Tests cover catalogue integrity, combined filters, saved-data migration, reading-list persistence, narrow/unfolded/landscape layouts, large text and preservation of user input across layout changes.
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Read & Watch
 
-# Learn More
+Explore includes eight English-language resources: six articles and two videos from Tourism Calgary, Travel Alberta and Grey Eagle. Visitors can search, filter by format or topic, save links locally, share them and open the original publisher. Saved links do not download external content. Existing saved dishes, codes and conversations are retained when the new reading-list field is added.
 
-To learn more about React Native, take a look at the following resources:
+## Adaptive layout and motion
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Layouts observe live window dimensions, safe-area insets and font scaling. Wide windows use two-column cards, a split onboarding layout, labelled navigation and side-by-side assistant conversation and suggestions. Narrow windows return to one column; large text, short landscape windows and safe areas are handled without device-name checks or resetting navigation and input state. This supports the iPhone Duo outer and unfolded displays as well as resized multitasking windows.
+
+Screen entrances, staggered cards, onboarding changes, chat messages and press feedback use React Native Animated with native-driver transforms. System Reduce Motion disables these transitions and changes the splash to a static progress indicator while preserving its four-second duration.
+
+Images follow `grey-eagle-*.png` naming. Unused background/duplicate-room images, five byte-identical poster copies, redundant menu source copies and the unused React Native welcome package have been removed. The native launch storyboard now uses a plain black background instead of template branding.
