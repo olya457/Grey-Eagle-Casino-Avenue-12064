@@ -1,4 +1,4 @@
-package com.greyeaglecasinoavenue
+package com.greyeagle.avenue
 
 import android.app.Application
 import com.facebook.react.PackageList

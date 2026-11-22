@@ -114,7 +114,7 @@ export function EventDetailScreen({
               {event.fields.Location}
             </Text>
             <Text style={s.small}>
-              Grey Eagle Resort & Casino · 3777 Grey Eagle Dr SW
+              Grey Eagle Resort · 3777 Grey Eagle Dr SW
             </Text>
           </View>
           <Icon name="next" size={16} />

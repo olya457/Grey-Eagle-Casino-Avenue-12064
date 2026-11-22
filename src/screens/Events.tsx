@@ -76,7 +76,7 @@ export function EventsScreen() {
       />
       <View style={s.between}>
         <View style={s.fill}>
-          <Text style={s.label}>GREY EAGLE · CASINO AVENUE</Text>
+          <Text style={s.label}>GREY EAGLE · AVENUE</Text>
           <Text style={s.title}>Events</Text>
         </View>
         <Brand compact />
