@@ -1,15 +1,15 @@
 import { StyleSheet } from 'react-native';
 export const colors = {
-  background: '#000000',
-  card: '#0e1018',
-  elevated: '#191c27',
-  border: '#232631',
-  text: '#f1f2fa',
-  muted: '#92949f',
-  accent: '#a5b8ff',
+  background: '#071b12',
+  card: '#0e1812',
+  elevated: '#19271f',
+  border: '#233129',
+  text: '#f1faf5',
+  muted: '#929f97',
+  accent: '#a5ffc9',
   pink: '#ff5b89',
 };
-export const gradient = ['#6a7fc3', '#364578'];
+export const gradient = ['#6ac38e', '#367850'];
 export const s = StyleSheet.create({
   fill: { flex: 1 },
   page: { flex: 1, backgroundColor: colors.background },
@@ -79,13 +79,13 @@ export const s = StyleSheet.create({
     minHeight: 48,
   },
   badge: {
-    backgroundColor: '#20263c',
+    backgroundColor: '#203c2b',
     maxWidth: '100%',
     flexShrink: 1,
     paddingHorizontal: 10,
     paddingVertical: 6,
     borderRadius: 9,
   },
-  badgeText: { color: '#c5d1f8', fontSize: 12 },
+  badgeText: { color: '#c5f8d9', fontSize: 12 },
   gap: { height: 20 },
 });

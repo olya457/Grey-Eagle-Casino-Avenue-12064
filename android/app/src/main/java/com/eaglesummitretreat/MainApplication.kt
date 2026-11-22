@@ -1,4 +1,4 @@
-package com.greyeagle.avenue
+package com.eaglesummitretreat
 
 import android.app.Application
 import com.facebook.react.PackageList

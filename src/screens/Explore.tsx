@@ -24,7 +24,7 @@ export function ExploreScreen() {
     <Screen top={false}>
       <Hero
         source={assets['grey-eagle-resort-exterior.png']}
-        title="Explore Grey Eagle"
+        title="Explore Eagle Summit Retreat"
         label="CALGARY · ALBERTA"
         subtitle="Your guide to entertainment, dining, accommodation and unforgettable experiences."
         height={370}
@@ -53,7 +53,7 @@ export function ExploreScreen() {
             <Text style={[s.cardTitle, { fontSize: 17 }]}>
               Questions & Answers
             </Text>
-            <Text style={[s.small, { color: '#e0e5ff', marginTop: 5 }]}>
+            <Text style={[s.small, { color: '#e0ffec', marginTop: 5 }]}>
               Hours, parking, dining, concerts & more — instant answers, no
               sign-in.
             </Text>

@@ -88,12 +88,12 @@ function TabBar({ state, navigation }: BottomTabBarProps) {
               style={[n.tab, layout.wide && n.railTab]}
             >
               <LinearGradient
-                colors={focused ? gradient : ['#12151e00', '#12151e00']}
+                colors={focused ? gradient : ['#121e1700', '#121e1700']}
                 style={[n.tabIcon, focused && n.active]}
               >
                 <Icon
                   name={icons[route.name]}
-                  color={focused ? colors.text : '#858995'}
+                  color={focused ? colors.text : '#85958b'}
                   size={22}
                 />
               </LinearGradient>
@@ -126,7 +126,7 @@ function MainTabs() {
           tabBarPosition: layout.wide ? 'left' : 'bottom',
           headerShown: false,
           animation: reduced ? 'none' : 'fade',
-          sceneStyle: { backgroundColor: '#000' },
+          sceneStyle: { backgroundColor: '#071b12' },
         }}
       >
         <Tabs.Screen name="Events" component={EventsScreen} />
@@ -146,7 +146,7 @@ export function AppNavigator() {
         ...DarkTheme,
         colors: {
           ...DarkTheme.colors,
-          background: '#000',
+          background: '#071b12',
           card: colors.card,
           primary: colors.accent,
         },
@@ -155,7 +155,7 @@ export function AppNavigator() {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-          contentStyle: { backgroundColor: '#000' },
+          contentStyle: { backgroundColor: '#071b12' },
           animation: reduced ? 'none' : 'slide_from_right',
         }}
       >
@@ -183,11 +183,11 @@ const n = StyleSheet.create({
     maxWidth: 460,
     padding: 6,
     flexDirection: 'row',
-    backgroundColor: '#12151ef5',
+    backgroundColor: '#121e17f5',
     borderWidth: 1,
-    borderColor: '#353945',
+    borderColor: '#35453b',
     borderRadius: 40,
-    shadowColor: '#7d93ce',
+    shadowColor: '#7dce9d',
     shadowOpacity: 0.16,
     shadowRadius: 20,
     shadowOffset: { width: 0, height: 0 },
@@ -208,8 +208,8 @@ const n = StyleSheet.create({
   },
   active: {
     borderWidth: 1,
-    borderColor: '#8b9fda',
-    shadowColor: '#819aff',
+    borderColor: '#8bdaab',
+    shadowColor: '#81ffb3',
     shadowOpacity: 0.6,
     shadowRadius: 12,
     shadowOffset: { width: 0, height: 3 },

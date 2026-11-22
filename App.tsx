@@ -16,8 +16,8 @@ function AppContent() {
 export default function App() {
   return (
     <SafeAreaProvider>
-      <View style={{ flex: 1, backgroundColor: '#000' }}>
-        <StatusBar barStyle="light-content" backgroundColor="#000" />
+      <View style={{ flex: 1, backgroundColor: '#071b12' }}>
+        <StatusBar barStyle="light-content" backgroundColor="#071b12" />
         <MotionPreferencesProvider>
           <AppStateProvider>
             <AppContent />

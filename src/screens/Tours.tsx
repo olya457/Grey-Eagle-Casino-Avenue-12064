@@ -32,8 +32,8 @@ export function ToursScreen() {
       <Text style={s.label}>TSUUT'INA HERITAGE</Text>
       <Text style={s.title}>Cultural Tours</Text>
       <Text style={[s.body, { marginBottom: 20 }]}>
-        Stories, art and traditions of the Tsuut'ina Nation — the land Grey
-        Eagle calls home.
+        Stories, art and traditions of the Tsuut'ina Nation — the land Eagle
+        Summit Retreat calls home.
       </Text>
       <Pressable
         onPress={() => navigation.navigate('TourDetail', { id: tours[0].id })}
@@ -89,7 +89,7 @@ export function ToursScreen() {
           onPress={() => navigation.navigate('Resources', { topic: 'Culture' })}
         />
       </View>
-      <View style={[s.card, s.padded, { borderColor: '#34415f' }]}>
+      <View style={[s.card, s.padded, { borderColor: '#345f45' }]}>
         <Text style={s.cardTitle}>A note on respect</Text>
         <Text style={[s.body, { marginTop: 10 }]}>
           These experiences are shared as visitor information. Formats,
@@ -128,7 +128,7 @@ export function TourDetailScreen({
         style={[
           s.card,
           s.padded,
-          { backgroundColor: '#181e31', borderColor: '#384663' },
+          { backgroundColor: '#183122', borderColor: '#386349' },
         ]}
       >
         <Text style={s.label}>CULTURAL BACKGROUND</Text>

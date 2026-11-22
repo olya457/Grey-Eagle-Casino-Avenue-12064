@@ -19,13 +19,17 @@ import { assets } from '../data';
 import { Brand, Button, IconButton } from '../components/ui';
 import { colors, s } from '../theme';
 import { useAppState } from '../storage/AppState';
-const splashHtml = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;background:transparent;height:100%;overflow:hidden}.track{position:absolute;left:30%;right:30%;bottom:8px;height:4px;border-radius:9px;background:#ffffff25;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#6681d2,#c4d0ff);width:0;animation:load 4s linear forwards;box-shadow:0 0 16px #93afff}@keyframes load{to{width:100%}}</style></head><body><div class="track"><div class="bar"></div></div><script>setTimeout(function(){window.ReactNativeWebView.postMessage('finished')},4000)</script></body></html>`;
+const splashHtml = `<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0;background:transparent;height:100%;overflow:hidden}.track{position:absolute;left:30%;right:30%;bottom:8px;height:4px;border-radius:9px;background:#ffffff25;overflow:hidden}.bar{height:100%;background:linear-gradient(90deg,#66d291,#c4ffdc);width:0;animation:load 4s linear forwards;box-shadow:0 0 16px #93ffbe}@keyframes load{to{width:100%}}</style></head><body><div class="track"><div class="bar"></div></div><script>setTimeout(function(){window.ReactNativeWebView.postMessage('finished')},4000)</script></body></html>`;
 export function Splash({ onFinish }: { onFinish: () => void }) {
   const insets = useSafeAreaInsets();
   const reduced = useReducedMotion();
   const { width, height } = useWindowDimensions();
-  const logoWidth = Math.min(width - insets.left - insets.right - 36, 540);
-  const logoHeight = (logoWidth * 178) / 355;
+  const logoWidth = Math.min(
+    width - insets.left - insets.right - 36,
+    height - insets.top - insets.bottom - 140,
+    540,
+  );
+  const logoHeight = logoWidth;
   const finished = useRef(false);
   const fallback = useRef<ReturnType<typeof setTimeout> | null>(null);
   const complete = () => {
@@ -46,14 +50,14 @@ export function Splash({ onFinish }: { onFinish: () => void }) {
     ? splashHtml.replace('animation:load 4s linear forwards', 'width:100%')
     : splashHtml;
   return (
-    <ImageBackground
-      source={assets['grey-eagle-splash-background.png']}
-      style={s.fill}
-      resizeMode="cover"
-    >
+    <View style={s.page}>
+      <LinearGradient
+        colors={['#204b32', colors.background]}
+        style={StyleSheet.absoluteFill}
+      />
       <Image
-        accessibilityLabel="Grey Eagle"
-        source={assets['grey-eagle-brand-logo.png']}
+        source={assets['eagle-summit-retreat-logo.png']}
+        accessibilityLabel="Eagle Summit Retreat"
         resizeMode="contain"
         style={[
           w.logo,
@@ -95,7 +99,7 @@ export function Splash({ onFinish }: { onFinish: () => void }) {
       <Text style={[w.footer, { bottom: insets.bottom + 6 }]}>
         Tsuut'ina Nation · Calgary, Alberta
       </Text>
-    </ImageBackground>
+    </View>
   );
 }
 const slides = [
@@ -125,7 +129,7 @@ const slides = [
     category: 'CULTURAL EXPERIENCES',
     title: "Discover Tsuut'ina\nculture",
     description:
-      "Learn the stories, art and traditions of the Tsuut'ina Nation, on whose land Grey Eagle proudly stands.",
+      "Learn the stories, art and traditions of the Tsuut'ina Nation, on whose land Eagle Summit Retreat proudly stands.",
   },
 ];
 export function Onboarding() {
@@ -158,7 +162,7 @@ export function Onboarding() {
           resizeMode="cover"
         >
           <LinearGradient
-            colors={['#00000008', '#00000000', '#000000']}
+            colors={['#00000008', '#00000000', '#071b12']}
             locations={[0, 0.55, 1]}
             style={StyleSheet.absoluteFill}
           />
@@ -261,7 +265,7 @@ const w = StyleSheet.create({
     left: 0,
     right: 0,
     textAlign: 'center',
-    color: '#9499a3',
+    color: '#94a39a',
     fontSize: 12,
   },
   skip: {
@@ -272,5 +276,5 @@ const w = StyleSheet.create({
   },
   copy: { paddingHorizontal: 28, flexGrow: 1, flexShrink: 0 },
   dot: { height: 6, width: 6, borderRadius: 8, backgroundColor: '#424242' },
-  activeDot: { width: 26, backgroundColor: '#a8baff' },
+  activeDot: { width: 26, backgroundColor: '#a8ffcb' },
 });

@@ -1,4 +1,4 @@
-package com.greyeagle.avenue
+package com.eaglesummitretreat
 
 import android.os.Bundle
 import com.facebook.react.ReactActivity

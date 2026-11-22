@@ -13,7 +13,6 @@ import { Gradient as LinearGradient } from './Gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors, gradient, s } from '../theme';
 import { Icon, IconName } from './Icon';
-import { assets } from '../data';
 import { useIsFocused } from '@react-navigation/native';
 import { useLayout } from '../hooks/useLayout';
 import { MotionPressable as Pressable, useEntrance } from './Motion';
@@ -29,7 +28,7 @@ export function Screen({
   return (
     <View style={s.page}>
       <LinearGradient
-        colors={['#222b49', '#0a0c13', '#000000']}
+        colors={['#224932', '#0a130e', '#071b12']}
         style={u.glow}
       />
       <ScrollView
@@ -82,7 +81,7 @@ export function Button({
       ]}
     >
       <LinearGradient
-        colors={secondary ? ['#191d2c', '#11141e'] : gradient}
+        colors={secondary ? ['#192c21', '#111e16'] : gradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 1 }}
         style={[u.button, secondary && u.secondary]}
@@ -219,7 +218,7 @@ export function Hero({
         />
       )}
       <LinearGradient
-        colors={['#00000008', '#00000018', '#000000']}
+        colors={['#00000008', '#00000018', '#071b12']}
         locations={[0, 0.45, 1]}
         style={StyleSheet.absoluteFill}
       />
@@ -235,12 +234,9 @@ export function Hero({
 export function Brand({ compact = false }: { compact?: boolean }) {
   return (
     <View style={u.brand}>
-      <Image
-        source={assets['grey-eagle-brand-logo.png']}
-        resizeMode="contain"
-        style={{ width: compact ? 56 : 48, height: 32 }}
-      />
-      {!compact && <Text style={u.brandText}>GREY EAGLE</Text>}
+      <Text style={[u.brandText, compact && { fontSize: 9 }]}>
+        EAGLE SUMMIT{'\n'}RETREAT
+      </Text>
     </View>
   );
 }
@@ -351,22 +347,22 @@ const u = StyleSheet.create({
     textAlign: 'center',
     flexShrink: 1,
   },
-  secondary: { borderColor: '#353e5e', borderWidth: 1 },
+  secondary: { borderColor: '#355e45', borderWidth: 1 },
   iconButton: {
     width: 44,
     height: 44,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#13151dcc',
+    backgroundColor: '#131d17cc',
     borderWidth: 1,
-    borderColor: '#353744',
+    borderColor: '#35443b',
     borderRadius: 24,
   },
   segments: {
     flexDirection: 'row',
     padding: 3,
     borderRadius: 12,
-    backgroundColor: '#1b1c21',
+    backgroundColor: '#1b211d',
     marginVertical: 18,
   },
   segment: {
@@ -377,7 +373,7 @@ const u = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  selectedSegment: { backgroundColor: '#45464e' },
+  selectedSegment: { backgroundColor: '#454e49' },
   segmentText: {
     color: colors.muted,
     fontSize: 13,
@@ -387,19 +383,19 @@ const u = StyleSheet.create({
   chips: { gap: 8, paddingVertical: 10 },
   chip: {
     borderWidth: 1,
-    borderColor: '#282b35',
-    backgroundColor: '#131418',
+    borderColor: '#28352d',
+    backgroundColor: '#131815',
     paddingVertical: 10,
     paddingHorizontal: 16,
     borderRadius: 24,
   },
-  activeChip: { backgroundColor: '#495b95', borderColor: '#8196d5' },
+  activeChip: { backgroundColor: '#499567', borderColor: '#81d5a3' },
   heroCopy: { paddingHorizontal: 20, paddingBottom: 5, paddingTop: 100 },
   brand: {
     flexDirection: 'row',
     gap: 8,
     alignItems: 'center',
-    backgroundColor: '#171e32b0',
+    backgroundColor: '#173222b0',
     borderRadius: 24,
     padding: 7,
     borderWidth: 1,
@@ -448,7 +444,7 @@ const u = StyleSheet.create({
     width: 56,
     height: 56,
     borderRadius: 28,
-    backgroundColor: '#202840',
+    backgroundColor: '#20402d',
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 16,

@@ -44,7 +44,7 @@ export function DishRow({ item }: { item: MenuItem }) {
           <Text style={[s.cardTitle, { fontSize: 14, flex: 1 }]}>
             {item.title}
           </Text>
-          <Text style={{ color: '#bdc9ee', fontWeight: '700', fontSize: 13 }}>
+          <Text style={{ color: '#bdeed1', fontWeight: '700', fontSize: 13 }}>
             {item.price}
           </Text>
         </View>
@@ -132,7 +132,7 @@ export function DiningScreen() {
                           <View
                             style={[
                               s.badge,
-                              { flexShrink: 1, backgroundColor: '#151924d9' },
+                              { flexShrink: 1, backgroundColor: '#15241bd9' },
                             ]}
                           >
                             <Text style={s.badgeText}>

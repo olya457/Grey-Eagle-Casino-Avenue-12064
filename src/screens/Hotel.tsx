@@ -29,7 +29,7 @@ export function HotelScreen() {
       <Hero
         source={assets['grey-eagle-resort-exterior.png']}
         title="Hotel & Rooms"
-        label="GREY EAGLE RESORT"
+        label="EAGLE SUMMIT RETREAT"
         subtitle="Contemporary rooms steps from the casino floor and Event Centre."
         height={340}
       />

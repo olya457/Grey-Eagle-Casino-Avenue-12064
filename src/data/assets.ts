@@ -1,5 +1,6 @@
 import { ImageSourcePropType } from 'react-native';
 export const assets: Record<string, ImageSourcePropType> = {
+  'eagle-summit-retreat-logo.png': require('../assets/eagle-summit-retreat-logo.png'),
   'grey-eagle-adam-ray-who-is-me-tour.png': require('../assets/grey-eagle-adam-ray-who-is-me-tour.png'),
   'grey-eagle-air-supply-a-matter-of-time-canada-tour.png': require('../assets/grey-eagle-air-supply-a-matter-of-time-canada-tour.png'),
   'grey-eagle-alleycvt-with-cyclops-tazu-dotast.png': require('../assets/grey-eagle-alleycvt-with-cyclops-tazu-dotast.png'),

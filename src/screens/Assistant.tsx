@@ -21,7 +21,7 @@ import { useAppState } from '../storage/AppState';
 import { RootParams } from '../navigation/types';
 import { colors, s } from '../theme';
 const greeting =
-  "Hi there! I'm the Grey Eagle Assistant. Pick a question below and I'll answer right away — no sign-in needed.";
+  "Hi there! I'm the Eagle Summit Retreat Assistant. Pick a question below and I'll answer right away — no sign-in needed.";
 export function AssistantScreen({
   navigation,
 }: NativeStackScreenProps<RootParams, 'Assistant'>) {
@@ -82,7 +82,7 @@ export function AssistantScreen({
         <Brand compact />
         <View style={s.fill}>
           <Text style={[s.cardTitle, { fontSize: 15 }]}>
-            Grey Eagle Assistant
+            Eagle Summit Retreat Assistant
           </Text>
           <Text style={[s.small, { fontSize: 10 }]}>
             Automated answers · No sign-in required
@@ -215,7 +215,7 @@ export function AssistantScreen({
                   style={[a.question, { opacity: pending ? 0.45 : 1 }]}
                 >
                   <Text
-                    style={{ color: '#c3c9dd', fontSize: 12, lineHeight: 18 }}
+                    style={{ color: '#c3ddcd', fontSize: 12, lineHeight: 18 }}
                   >
                     {item.question}
                   </Text>
@@ -240,12 +240,12 @@ const a = StyleSheet.create({
     gap: 8,
     paddingHorizontal: 14,
     paddingBottom: 14,
-    backgroundColor: '#090b11',
+    backgroundColor: '#09110c',
     borderBottomWidth: 1,
     borderColor: colors.border,
   },
   assistant: {
-    backgroundColor: '#1b1f2e',
+    backgroundColor: '#1b2e23',
     padding: 14,
     borderRadius: 20,
     borderBottomLeftRadius: 5,
@@ -254,7 +254,7 @@ const a = StyleSheet.create({
     marginBottom: 12,
   },
   user: {
-    backgroundColor: '#46578f',
+    backgroundColor: '#468f63',
     padding: 14,
     borderRadius: 20,
     borderBottomRightRadius: 5,
@@ -262,20 +262,20 @@ const a = StyleSheet.create({
     alignSelf: 'flex-end',
     marginBottom: 12,
   },
-  message: { color: '#e0e3ee', fontSize: 14, lineHeight: 21 },
+  message: { color: '#e0eee6', fontSize: 14, lineHeight: 21 },
   suggestions: {
-    backgroundColor: '#090b11',
+    backgroundColor: '#09110c',
     paddingHorizontal: 16,
     paddingTop: 12,
     borderTopWidth: 1,
-    borderColor: '#20232f',
+    borderColor: '#202f26',
   },
   question: {
     paddingHorizontal: 12,
     paddingVertical: 9,
     borderRadius: 18,
-    borderColor: '#35415f',
+    borderColor: '#355f46',
     borderWidth: 1,
-    backgroundColor: '#141a29',
+    backgroundColor: '#14291c',
   },
 });

@@ -76,7 +76,7 @@ export function EventsScreen() {
       />
       <View style={s.between}>
         <View style={s.fill}>
-          <Text style={s.label}>GREY EAGLE · AVENUE</Text>
+          <Text style={s.label}>EAGLE SUMMIT RETREAT</Text>
           <Text style={s.title}>Events</Text>
         </View>
         <Brand compact />
@@ -298,7 +298,7 @@ const e = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 12,
-    backgroundColor: '#1c1e26',
+    backgroundColor: '#1c2620',
     borderRadius: 14,
     gap: 8,
   },
@@ -308,12 +308,12 @@ const e = StyleSheet.create({
     minWidth: 43,
     padding: 8,
     borderRadius: 15,
-    backgroundColor: '#12141b',
+    backgroundColor: '#121b16',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#242735',
+    borderColor: '#24352b',
   },
-  dayActive: { backgroundColor: '#43568c', borderColor: '#9cb2ff' },
+  dayActive: { backgroundColor: '#438c60', borderColor: '#9cffc4' },
   dayNumber: {
     fontSize: 18,
     fontWeight: '700',
@@ -332,7 +332,7 @@ const e = StyleSheet.create({
     margin: 12,
     padding: 8,
     borderRadius: 12,
-    backgroundColor: '#141928b0',
+    backgroundColor: '#14281cb0',
   },
   featureCopy: { padding: 14, paddingTop: 100, marginTop: 'auto' },
   eventCard: { padding: 9, flexDirection: 'row', gap: 12, borderRadius: 20 },

@@ -114,7 +114,7 @@ export function EventDetailScreen({
               {event.fields.Location}
             </Text>
             <Text style={s.small}>
-              Grey Eagle Resort · 3777 Grey Eagle Dr SW
+              Eagle Summit Retreat · 3777 Grey Eagle Dr SW
             </Text>
           </View>
           <Icon name="next" size={16} />
@@ -128,7 +128,7 @@ export function EventDetailScreen({
             s.card,
             s.padded,
             s.row,
-            { marginTop: 20, backgroundColor: '#1c2339' },
+            { marginTop: 20, backgroundColor: '#1c3928' },
           ]}
         >
           <Icon name="ticket" color={colors.accent} />
@@ -211,7 +211,7 @@ export function EventDetailScreen({
             accessibilityLabel="Close promo code"
           />
           <LinearGradient
-            colors={['#1b2135', '#0b0d15']}
+            colors={['#1b3525', '#0b150f']}
             style={[
               d.sheet,
               {
@@ -342,7 +342,7 @@ const d = StyleSheet.create({
     right: 0,
     paddingHorizontal: 20,
     paddingTop: 12,
-    backgroundColor: '#06070af5',
+    backgroundColor: '#060a08f5',
     flexDirection: 'row',
     gap: 14,
     alignItems: 'center',
@@ -355,7 +355,7 @@ const d = StyleSheet.create({
     borderTopRightRadius: 32,
     padding: 24,
     borderWidth: 1,
-    borderColor: '#2d344b',
+    borderColor: '#2d4b39',
     maxHeight: '90%',
     width: '100%',
     maxWidth: 600,
@@ -365,7 +365,7 @@ const d = StyleSheet.create({
     height: 4,
     width: 34,
     borderRadius: 2,
-    backgroundColor: '#4a5065',
+    backgroundColor: '#4a6555',
     alignSelf: 'center',
     marginBottom: 18,
   },
@@ -373,7 +373,7 @@ const d = StyleSheet.create({
     height: 56,
     width: 56,
     borderRadius: 18,
-    backgroundColor: '#3d4e84',
+    backgroundColor: '#3d8459',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -382,8 +382,8 @@ const d = StyleSheet.create({
     borderWidth: 1,
     borderStyle: 'dashed',
     borderRadius: 18,
-    borderColor: '#8a9dd7',
-    backgroundColor: '#20283f',
+    borderColor: '#8ad7a9',
+    backgroundColor: '#203f2c',
     marginBottom: 18,
     alignItems: 'center',
   },
